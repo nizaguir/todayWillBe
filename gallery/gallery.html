@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Weather Gallery | Today Will Be </title>
+  <meta name="description"
+    content="The Weather Gallery Page for Todaywillbe.net. The gallery offers a variety of weather related images taken my residents of eastern idaho" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/small.css" />
+  <link rel="stylesheet" href="./css/medium.css" />
+  <link rel="stylesheet" href="./css/large.css" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+</head>
+
+<body>
+  <button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>
+
+  <div id="banner">
+    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the City Park Pavilion.
+  </div>
+
+  <header>
+    <picture>
+      <img src="images/general/logo.png" alt="logo for todaywillbe.info">
+    </picture>
+    <section class="headings">
+      <h1>Today Will Be</h1>
+      <q class="m">The weather forecast you didn't know you need</q>
+    </section>
+    <!-- <button class="responsiveBtn">&#9776;</button> -->
+    <!-- <div class="menu-container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div> -->
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">
+          <span class="button">&#8801; MENU</span></a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../preston/preston.html">Preston</a></li>
+      <li><a href="../soda_springs/sodasprings.html">Soda Springs</a></li>
+      <li><a href="../haven/haven.html">Fish Haven</a></li>
+      <li><a href="../storm_center/stormcenter.html">Storm Center</a></li>
+      <li class="active"><a href="../gallery/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <h2 class="home page-title">Weather Gallery</h2>
+    <section class="gallery">
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image1.jpg"
+            alt="Snow cover pine trees">
+        </picture>
+        <figcaption class="gallery-cap">Snow</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image2.jpg" alt="Lighting">
+        </picture>
+        <figcaption class="gallery-cap">Lighting</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image3.jpg" alt="Ray of sun">
+        </picture>
+        <figcaption class="gallery-cap">Ray of sun</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image4.jpg"
+            alt="Rainbow over valley">
+        </picture>
+        <figcaption class="gallery-cap">Rainbow</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image5.jpg"
+            alt="Cloudy Fall day">
+        </picture>
+        <figcaption class="gallery-cap">Cloudy Fall</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image6.jpg" alt="Fall leafs">
+        </picture>
+        <figcaption class="gallery-cap">Fall leaves</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image7.jpg"
+            alt="Beach Sunset">
+        </picture>
+        <figcaption class="gallery-cap">Beach Sunset</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image8.jpg"
+            alt="Green Valley">
+        </picture>
+        <figcaption class="gallery-cap">Green Valley</figcaption>
+      </figure>
+
+      <figure class="gallery-image">
+        <picture>
+          <img src="https://via.placeholder.com/300x400.png/000000?" data-src="./images/g-image9.jpg"
+            alt="Leaves on sidewalk">
+        </picture>
+        <figcaption class="gallery-cap">Leaves on sidewalk</figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer-container">
+      <div class="container-map">
+        <img class="map" src="./images/general/today_will_be_map.jpg" alt="the location of today will be headquarters">
+      </div>
+
+      <div class="container-info">
+        <h3 class="footer-h">Today Will Be</h3>
+        <div class="contact-info position">
+          <img src="./images/general/location_on_black_24dp.png" alt="location icon">
+          <p>30 N 1st E <br>Preston, ID 83623</p>
+        </div>
+        <div class="contact-info mail">
+          <img src="./images/general/email_black_24dp.png" alt="email icon">
+          <a href="#">info@todaywillbe.com</a>
+        </div>
+        <div class="contact-info phone">
+          <img src="./images/general/phone_black_24dp.png" alt="phone icon">
+          <a href="#">959.469.9999</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"><img src="./images/general/facebook_icon.png"
+              alt="facebook icon"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./images/general/instagram_icon.png"
+              alt="instagram icon"></a>
+          <a href="https://www.twitter.com" target="_blank"><img src="./images/general/twitter_icon.png"
+              alt="twitter icon"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bar">
+      <span>&copy;2021 Today Will Be | Attributions | Natalia Jensen | </span>
+      <span id="currentdate"></span>
+      <span> | Last visit:
+        <span id="last-visit"></span> days
+      </span>
+    </div>
+
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="./js/webFontLoader.js"></script>
+  <!-- NEW -->
+  <script src="./js/lastvisit.js"></script>
+  <script src="./js/goTopBtn.js"></script>
+
+
+</body>
+
+</html>

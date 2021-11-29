@@ -1,0 +1,260 @@
+/* ----- tablet view (36 em) -------------------------- */
+@media only screen and (min-width: 32.5em) {
+    :root {
+        /*  'Montserrat','Poppins','Ubuntu','sans-serif' */
+        --h-text: 'Poppins', sans-serif;
+        --t-text: "Montserrat", sans-serif;
+        --text-color: black;
+        --text-color-2: white;
+        --accent-color: #E3F2FD;
+        --accent-color-green: #D5C020;
+        --accent-color-wheat: wheat;
+        --bg-1: #173753;
+        --bg-2: #E07A5F;
+        --bg-t: #E96C49;
+    }
+
+    main {
+        margin: 0 auto;
+        max-width: 80vw;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation>li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1;
+    }
+
+    .navigation a {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .headings h1 {
+        text-align: left;
+        font-size: 1.6rem;
+        margin: 0 0 0 65px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    main .page-title {
+        font-size: 1.7rem;
+    }
+
+    /*   FOOTER  */
+
+    .footer-bar span,
+    .footer-bar a {
+        font-size: 0.9rem;
+    }
+
+    footer .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    footer .container-map {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        margin: auto;
+    }
+
+    footer .container-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .container-info h3 {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .contact-info p {
+        margin: 0;
+        padding-bottom: 0px;
+    }
+
+
+    /* HERO */
+
+    .hero-div {
+        position: relative;
+        margin: 10px auto;
+        max-width: 80vw;
+    }
+
+
+    .weathersummary {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        border: rgba(23, 55, 83, 1);
+        border-radius: 5px;
+        padding: 2rem;
+        box-shadow: 0 0 20px #ccc;
+        /* Change width of weather summary??? */
+        width: 200px;
+        height: 120px;
+    }
+
+    .ws-table {
+        color: black;
+        font-size: 14px;
+    }
+
+    .sum-data {
+        color: black;
+    }
+
+    /* FORECAST SECTION */
+
+    .forecast {
+        max-width: 62.5em;
+        margin: auto;
+    }
+
+    .col-head {
+        padding: 10px 0 10px 0;
+    }
+
+    /* ARTICLE SECTION */
+
+    .article-div {
+        margin: 10px auto;
+        max-width: 62.5em;
+        background-color: #eee;
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: left;
+        border-radius: 25px;
+        /* filter: drop-shadow(0 0 0 #000); */
+    }
+
+    .article-img {
+        float: right;
+        padding: 0 0 0 16px;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    /* -------------- GALLERY PAGE ---------------- */
+
+    section.gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+    }
+
+    figure.gallery-image:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        transition: box-shadow 250ms;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 3s;
+    }
+
+    /* ----------- STORM REPORT PAGE ------------ */
+
+    form label.top input,
+    form label.top select {
+        width: 100%;
+    }
+
+    form label textarea {
+        width: 100%;
+    }
+
+    /* ----------- THANK YOU MESSAGE PAGE --------- */
+    .thank-you-message {
+        margin-bottom: 70px;
+
+    }
+
+    /* ----- HOME page styling ------- */
+    .events-title,
+    .info-title {
+        color: rgba(0, 0, 0, 0.808);
+        padding: 20px;
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        padding-bottom: 0px
+    }
+
+    .town-div {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: white;
+        box-shadow: 1px 1px 8px rgb(0 0 0 / 20%);
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 100%;
+    }
+
+    .town-div:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .town-h2 {
+        color: black;
+        width: 100%;
+        background-color: #D5C020;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5px 0;
+        margin: 0 0 10px 0;
+        border-top: 10px;
+        /* text-decoration: underline; */
+
+    }
+
+    .town-motto {
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .town-div img {
+        max-width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    #storm-r-value {
+        width: 40px;
+    }
+
+    #storm-r {
+        width: 450px;
+    }
+
+
+}

@@ -1,0 +1,79 @@
+@media only screen and (min-width: 72em) {
+  /* 56em = 896 px */
+
+  :root {
+    /*  'Montserrat','Poppins','Ubuntu','sans-serif' */
+    --h-text: 'Poppins', sans-serif;
+    --t-text: "Montserrat", sans-serif;
+    --text-color: black;
+    --text-color-2: white;
+    --accent-color: #E3F2FD;
+    --accent-color-green: #D5C020;
+    --accent-color-wheat: wheat;
+    --bg-1: #173753;
+    --bg-t: #E96C49;
+    --bg-2: #E07A5F;
+  }
+
+  main,
+  footer {
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+
+  header img {
+    width: 95px;
+    height: auto;
+  }
+
+  header picture {
+    width: 95px;
+    height: 95px;
+  }
+
+  header {
+    padding: 0.75rem;
+  }
+
+  .headings h1 {
+    font-size: 2rem;
+    padding: 5px 0;
+  }
+
+  h1,
+  .m {
+    letter-spacing: 1.5pt;
+    margin-left: 17px;
+  }
+
+  main .home.page-title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.808);
+  }
+
+  nav .navigation {
+    margin: 0 auto;
+    max-width: 70vw;
+  }
+
+  .navigation a {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* ----- TOWN PAGES ------ */
+
+  .weathersummary {
+    top: 50px;
+    left: 50px;
+  }
+  
+  /* GALLERY */
+  section.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+}

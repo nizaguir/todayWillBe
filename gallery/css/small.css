@@ -1,0 +1,640 @@
+:root {
+  /*  'Montserrat','Poppins','Ubuntu','sans-serif' */
+  --h-text: 'Poppins', sans-serif;
+  --t-text: "Montserrat", sans-serif;
+  --text-color: black;
+  --text-color-2: white;
+  --accent-color: #E3F2FD;
+  --accent-color-green: #D5C020;
+  --accent-color-wheat: wheat;
+  --bg-1: #173753;
+  --bg-2: #E07A5F;
+  --bg-t: #E96C49;
+
+}
+
+
+/* ----- GENERAL Header, Nav, Main, Footer ------ */
+
+main {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* --------------- MAIN TITLE ------------- */
+
+.page-title {
+  padding: 30px;
+}
+
+/* -------------------- HEADINGS --------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--h-text);
+}
+
+h3,
+h4 {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+footer {
+  font-family: var(--h-text);
+  background-color: #173753;
+  color: white;
+}
+
+header img {
+  width: 70px;
+}
+
+header picture {
+  width: 70px;
+  height: 70px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-size: 1.3rem;
+  margin: 0 0 0 17px;
+  letter-spacing: 4px;
+}
+
+/* ----- m ------------- */
+.m {
+  font-style: italic;
+  font-family: var(--t-text);
+  letter-spacing: 1px;
+  color: white;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+
+/* ----------------- '<a>' LINKS ------------------ */
+a {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1em;
+}
+
+/* ---------------- NAVIGATION -------------------- */
+nav {
+  margin: 0 auto;
+  background-color: var(--bg-t);
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation li:hover {
+  color: black;
+  background-color: #e3f2fd;
+}
+
+.responsive li {
+  display: block;
+}
+
+nav ul li.active {
+  background-color: #e3f2fd;
+  color: black;
+}
+
+
+/* -------------  GENRAL PAGE - -------- */
+nav,
+main p {
+  font-family: var(--t-text);
+}
+
+main {
+  display: block;
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+
+/* ------------------- FOOTER --------------- */
+
+.footer-container {
+  background-color: var(--bg-t);
+  color: black;
+  padding: 1rem;
+  font-family: var(--t-text);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 50px;
+
+}
+
+.container-info .footer-h {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+footer .container-info {
+  grid-column: 1 / 1;
+  grid-row: 1;
+  padding: 15px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer .contact-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+footer .contact-info a,
+footer .contact-info p {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+footer .contact-info a:hover {
+  color: white;
+}
+
+footer .contact-info img {
+  width: 20px;
+  margin-right: 0.8rem;
+}
+
+footer .container-map {
+  margin: 0 auto;
+  grid-column: 1 / 1;
+  grid-row: 2;
+  padding: 15px;
+}
+
+footer .map {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer .footer-bar {
+  background-color: #173753;
+}
+
+footer .social-icons {
+  display: flex;
+  margin-top: .5rem;
+  margin-left: 30px;
+
+}
+
+.footer-bar {
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  font-family: var(--t-text);
+}
+
+.footer-bar span,
+.footer-bar a {
+  font-size: 0.7rem;
+}
+
+footer .footer-bar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .footer-bar a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer .social-icons img {
+  margin: .5rem;
+  margin-bottom: 0;
+  width: 30px;
+}
+
+/* -------------- HERO STYLING ------------- */
+
+.hero-div {
+  display: block;
+  margin: 10px auto;
+}
+
+.hero-pic img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 25px;
+}
+
+/* ---------- WEATHER SUMMARY SECTION ---------- */
+.weathersummary {
+  background: #e3f2fd;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.weathersummary h3 {
+  font-size: 1.3rem;
+}
+
+.ws-table {
+  font-family: var(--t-text);
+  color: black;
+  margin: 0 auto;
+}
+
+.title-data {
+  width: 50%;
+  text-align: right;
+}
+
+.sum-data {
+  width: 50%;
+  padding-left: 5px;
+}
+
+/* ----------- FORECAST SECTION TABLE ----------- */
+.forecast-flex {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: var(--t-text);
+  margin: 0 0 50px 0;
+}
+
+.flex-col {
+  flex: 1 1 auto;
+  background-color: white;
+  border: solid .5px var(--accent-color-green)
+}
+
+#forecast-h2 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.data {
+  display: block;
+  padding: 5px 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.col-head {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 1rem;
+  background-color: var(--accent-color-green);
+  color: black;
+}
+
+/* ------------ ARCTICLE SECTION ------------- */
+.article-div {
+  margin: 10px auto;
+  padding: 1.6rem;
+  background-color: #eee;
+  font-family: var(--t-text);
+  overflow: hidden;
+  text-align: left;
+  max-width: 340px;
+  font-size: .9rem;
+
+}
+
+.article-heading h3,
+h4 {
+  margin-bottom: 5px;
+}
+
+.article-img {
+  padding-top: 1rem;
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  border-radius: 25% 10%;
+  filter: drop-shadow(0 0 5 #000);
+}
+
+
+
+/* ------------- POPUP BANNER --------------- */
+
+#banner {
+  background-color: #FFD639;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--t-text);
+  font-size: 1.2rem;
+  display: none;
+}
+
+#more {
+  display: none;
+}
+
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:var(--accent-color-green);
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#goTopBtn:hover {
+  background-color: var(--accent-color-green);
+  border-style: solid;
+  border-color: var(--bg-1);
+}
+
+/* ---------- GALLERY PAGE -------------- */
+figure.gallery-image {
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  min-height: 300px;
+}
+
+figure.gallery-image img {
+  max-width: 250px;
+  min-height: 300px;
+}
+
+
+.gallery-cap {
+  background-color: #fff;
+  text-align: center;
+  font-family: var(--t-text);
+  font-style: italic;
+  padding: 8px;
+}
+
+section.gallery {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  justify-items: center
+}
+
+
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+} */
+
+
+/* ----------- STORM CENTER PAGE | REPORT A STORM FORM ------------  */
+main .home.page-title {
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.form-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.storm-form {
+  margin: 0 auto;
+  font-family: var(--t-text);
+
+}
+
+form fieldset {
+  margin: 1.3rem 0;
+  border: 3px solid #173753;
+  border-radius: 20px;
+  text-align: left;
+}
+
+form legend {
+  color: black;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top,
+form label.sbs,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9F3214;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 90%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs #rating {
+  display: block;
+  padding: .75rem 0;
+}
+
+form fieldset .radio {
+  color: black;
+}
+
+form label textarea {
+  display: block;
+  padding: .8rem;
+  width: 90%;
+  max-width: 20rem;
+}
+
+input.submitBtn {
+  border: none;
+  background-color: #173753;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: .75rem 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 20rem;
+}
+
+input.submitBtn:hover {
+  background-color: #e3f2fd;
+  color: black;
+}
+
+form label.top input:required {
+  border-left: #fc3200 solid 5px;
+}
+
+form label.top input:required:valid {
+  border-left: #00f148 solid 5px;
+}
+
+/* ------------- THANK YOU MESSAGE PAGE ----------- */
+.thank-you-message {
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  background-color: wheat;
+  padding: 34px;
+  line-height: 1.4em;
+  font-family: var(--t-text);
+}
+
+
+/* ----- HOME page styling ------- */
+
+.town-div {
+  border: none;
+  border-radius: 10px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  background-color: whitesmoke;
+  filter: drop-shadow(0 0 0 #000);
+  overflow: hidden;
+}
+
+.town-img {
+  max-width: 100%;
+  max-height: 100%;
+  /* max-width: 350px; */
+  filter: drop-shadow(0 0 0 #000);
+}
+
+.text-div {
+  width: 100%;
+}
+
+.town-p {
+  font-family: var(--t-text);
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.town-h2 {
+  color: white;
+  width: 100%;
+  background-color: var(--accent-color-green);
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.town-motto {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+/* ---- HOME PAGE - ARTICLE SECTION */
+.events-title,
+.info-title {
+  color: black;
+  padding: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  padding-bottom: 0px
+}
+
+#frame {
+  border: 3px dotted;
+  width: 300px;
+  height: 300px;
+}
+
+
+.town-event {
+  margin: 30px auto;
+}
+
+.h3-title {
+  text-decoration: underline #D5C020 3px;
+}
+
+.town-event p {
+  font-size: 14px;
+}

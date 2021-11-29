@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storm Center | Today Will Be </title>
+  <meta name="description"
+    content="Eastern Idaho residents can report a storm using the form on the Storm Center page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/small.css" />
+  <link rel="stylesheet" href="./css/medium.css" />
+  <link rel="stylesheet" href="./css/large.css" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+</head>
+
+<body>
+  <div id="banner">
+    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the City Park Pavilion.
+  </div>
+
+  <header>
+    <picture>
+      <img src="images/general/logo.png" alt="logo for todaywillbe.info">
+    </picture>
+    <section class="headings">
+      <h1>Today Will Be</h1>
+      <q class="m">The weather forecast you didn't know you need</q>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">
+          <span class="button">&#8801; MENU</span></a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../preston/preston.html">Preston</a></li>
+      <li><a href="../soda_springs/sodasprings.html">Soda Springs</a></li>
+      <li><a href="../haven/haven.html">Fish Haven</a></li>
+      <li class="active"><a href="../storm_center/stormcenter.html">Storm Center</a></li>
+      <li><a href="../gallery/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="home page-title">Storm Center Form</h2>
+    <div class="form-container">
+
+      <form class="storm-form" method="get" action="thankyou.html">
+
+        <fieldset>
+          <legend>Reporter Information</legend>
+
+          <label for="fullName" class="top">Full Name* <input type="text" name="fullName" id="fullName"
+              pattern="(.*[A-Za-z]){5}" autofocus required>
+          </label>
+
+          <label for="email" class="top">Email<input type="email" name="email" id="email"
+              placeholder="email@address.com"> </label>
+
+          <label for="phone" class="top">Phone Number*<input type="tel" name="phone" id="phone" placeholder="1234561122"
+              required></label>
+
+          <label for="zipcode" class="top">Zip Code*<input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5}"
+              required /></label>
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Information</legend>
+
+          <label for="stormDate" class="top">Storm Date <input type="date" name="stormDate" id="stormDate"></label>
+
+          <label for="stormType" class="top">Storm Type &#9662;<input list="stormTypes" name="stormType"
+              id="stormType"></label>
+          <datalist id="stormTypes">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+
+
+
+          <label for="rating" class="sbs">Storm Rating (1-10) &nbsp;&nbsp;&nbsp;
+            <input name="stormRating" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+              oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+          <span id="ratingvalue">5</span>
+
+
+          <datalist id="tickmarks">
+            <option value="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+          </datalist>
+
+
+          <label for="region" class="top">Storm Region
+            <select name="region" id="region">
+              <option value="none" selected disabled>Select Region... &#9662;</option>
+              <option value="preston">Preston</option>
+              <option value="sodaSprings">Soda Springs</option>
+              <option value="fishHaven">Fish Haven</option>
+            </select>
+          </label>
+
+
+          <div>User In-Danger Level</div>
+          <label for="dangerY" class="sbs radio"><input type="radio" name="danger" id="dangerY" value="yes"> Yes</label>
+          <label for="dangerM" class="sbs radio"><input type="radio" name="danger" id="dangerM" value="maybe">
+            Maybe</label>
+          <label for="dangerN" class="sbs radio"><input type="radio" name="danger" id="dangerN" value="no"> No</label>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="addInfo" class="top">Comments <textarea name="addInfo" id="addInfo" cols="40"
+              rows="10"></textarea></label>
+
+        </fieldset>
+
+        <input type="submit" value="Send My Storm Report" class="submitBtn">
+        <!-- </div> -->
+      </form>
+    </div>
+  </main>
+
+  <footer>
+
+    <div class="footer-container">
+      <div class="container-map">
+        <img class="map" src="./images/general/today_will_be_map.jpg" alt="the location of today will be headquarters">
+      </div>
+
+      <div class="container-info">
+        <h3 class="footer-h">Today Will Be</h3>
+        <div class="contact-info position">
+          <img src="./images/general/location_on_black_24dp.png" alt="location icon">
+          <p>30 N 1st E <br>Preston, ID 83623</p>
+        </div>
+        <div class="contact-info mail">
+          <img src="./images/general/email_black_24dp.png" alt="email icon">
+          <a href="#">info@todaywillbe.com</a>
+        </div>
+        <div class="contact-info phone">
+          <img src="./images/general/phone_black_24dp.png" alt="phone icon">
+          <a href="tel:123-456-7890">959.469.9999</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"><img src="./images/general/facebook_icon.png"
+              alt="facebook icon"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./images/general/instagram_icon.png"
+              alt="instagram icon"></a>
+          <a href="https://www.twitter.com" target="_blank"><img src="./images/general/twitter_icon.png"
+              alt="twitter icon"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bar">
+      <span>&copy;2021 Today Will Be | Attributions | Natalia Jensen | </span>
+      <span id="currentdate"></span>
+      <span> | Last visit:
+        <span id="last-visit"></span> days
+      </span>
+    </div>
+
+  </footer>
+  <script src="./js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="./js/webFontLoader.js"></script>
+  <!-- NEW -->
+  <script src="./js/lastvisit.js"></script>
+  <script src="./js/rating.js"></script>
+
+
+
+</body>
+
+</html>

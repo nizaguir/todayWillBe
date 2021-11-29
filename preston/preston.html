@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preston Town | Today Will Be</title>
+  <meta name="description"
+    content="The Preston Town Page for the Today Will Be website. Information about the town and events " />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/small.css" />
+  <link rel="stylesheet" href="./css/medium.css" />
+  <link rel="stylesheet" href="./css/large.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <div id="banner">
+    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the City Park Pavilion.
+  </div>
+
+  <header>
+    <picture>
+      <img src="images/general/logo.png" alt="logo for todaywillbe.info">
+    </picture>
+    <section class="headings">
+      <h1>Today Will Be</h1>
+      <q class="m">The weather forecast you didn't know you need</q>
+    </section>
+    <!-- <button class="responsiveBtn">&#9776;</button> -->
+    <!-- <div class="menu-container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div> -->
+
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">
+          <span class="button">&#8801; MENU</span></a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a href="../preston/preston.html">Preston</a></li>
+      <li><a href="../soda_springs/sodasprings.html">Soda Springs</a></li>
+      <li><a href="../haven/haven.html">Fish Haven</a></li>
+      <li><a href="../storm_center/stormcenter.html">Storm Center</a></li>
+      <li><a href="../gallery/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="home page-title">The City of Preston </h2>
+    <div class="hero-div">
+      <picture class="hero-pic">
+        <source media="(min-width: 896px)" srcset="./images/1000-preston.jpg">
+        <source media="(min-width: 520px)" srcset="./images/800-preston.jpg">
+        <img src="./images/400-preston.jpg" alt="preston-idaho">
+      </picture>
+
+      <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <table class="ws-table">
+          <tr>
+            <td class="title-data">Currently: </td>
+            <td class="sum-data currentWeather"></td>
+          </tr>
+          <tr>
+            <td class="title-data">High: </td>
+            <td class="sum-data highTemp"></td>
+          </tr>
+          <tr>
+            <td class="title-data">Wind Chill: </td>
+            <td class="sum-data wind-chill"></td>
+          </tr>
+          <tr>
+            <td class="title-data">Humidity: </td>
+            <td class="sum-data humidity"></td>
+          </tr>
+          <tr>
+            <td class="title-data">Wind Speed: </td>
+            <td class="sum-data wind-speed"></td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <h2 id='forecast-h2'>5 Day Forecast</h2>
+    <div class="forecast">
+      <div class="forecast-flex">
+
+        <div class="flex-col">
+          <span class="col-head day-name"></span>
+          <img src="" alt="" class="weather-img">
+          <span class="data forc"></span>
+        </div>
+
+        <div class="flex-col">
+          <span class="col-head day-name"></span>
+          <img src="" alt="" class="weather-img">
+          <span class="data forc"></span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head day-name"></span>
+          <img src="" alt="" class="weather-img">
+          <span class="data forc"></span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head day-name"></span>
+          <img src="" alt="" class="weather-img">
+          <span class="data forc"></span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head day-name"></span>
+          <img src="" alt="" class="weather-img">
+          <span class="data forc"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <h2 class="preston events-title">▾ Upcoming Events ▾</h2>
+
+    <div class="town-events">
+      <!-- Towns Events  -->
+      <div class="town-events-info">
+        <!-- <section>
+          <p></p>
+        </section> -->
+      </div>
+    </div>
+
+
+    <div class="article-div">
+
+      <article class="articles">
+        <div class="article-heading">
+          <h3>Family Time Is Healthy </h3>
+          <h4>by: Jessica Pearson</h4>
+        </div>
+        <img src="./images/preston-park.jpg" alt="A family in the park" class="article-img" />
+        <p>
+          Spending time partaking in everyday family activities has been associated with greater emotional
+          bonding within families. It can be simple as going to the park for a family picnic, playing some board games, or simply watching television. According to research published by the National Council on Family Relationscan activites like these can make big impact in the overall health of a family. While it is recommended it is also important to note that every family works differently. In some family the parents, have to work long hours and when coming home all they want is some rest. This can make family time difficult, but research has found that  
+          <span id="dots">...</span>
+        </p>
+
+      </article>
+    </div>
+
+
+  </main>
+
+  <footer>
+
+    <div class="footer-container">
+      <div class="container-map">
+        <img class="map" src="./images/general/today_will_be_map.jpg" alt="the location of today will be headquarters">
+      </div>
+      <div class="container-info">
+        <h3 class="footer-h">Today Will Be</h3>
+        <div class="contact-info position">
+          <img src="./images/general/location_on_black_24dp.png" alt="location icon">
+          <p>30 N 1st E <br>Preston, ID 83623</p>
+        </div>
+        <div class="contact-info mail">
+          <img src="./images/general/email_black_24dp.png" alt="email icon">
+          <a href="#">info@todaywillbe.com</a>
+        </div>
+        <div class="contact-info phone">
+          <img src="./images/general/phone_black_24dp.png" alt="phone icon">
+          <a href="tel:123-456-7890">959.469.9999</a>
+        </div>
+
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"><img src="./images/general/facebook_icon.png"
+              alt="facebook icon"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./images/general/instagram_icon.png"
+              alt="instagram icon"></a>
+          <a href="https://www.twitter.com" target="_blank"><img src="./images/general/twitter_icon.png"
+              alt="twitter icon"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bar">
+      <span>&copy;2021 Today Will Be | Attributions | Natalia Jensen | </span>
+      <span id="currentdate"></span>
+    </div>
+
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="./js/webFontLoader.js"></script>
+  <!-- Weather and events -->
+  <script defer src="./js/weather.js"></script>
+  <script src="./js/preston-events.js"></script>
+</body>
+
+</html>
